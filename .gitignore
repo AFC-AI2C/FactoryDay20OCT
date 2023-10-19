@@ -1,3 +1,5 @@
 reports/
 store/
 media/
+.venv/
+.DS_Store
