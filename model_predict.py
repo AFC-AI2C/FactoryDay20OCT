@@ -41,7 +41,7 @@ from tensorflow.keras.models import model_from_json
 # Load dataset
 dataset = tf.keras.utils.image_dataset_from_directory(
     args.images,
-    image_size=(224, 224),
+    image_size=(150, 150),
     labels=None,
     label_mode="categorical",
     batch_size=1,
