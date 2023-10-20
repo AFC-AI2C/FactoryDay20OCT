@@ -33,9 +33,7 @@ class ConfusionMatrix(ValueBase):
     def deserialize(
         metadata: EvidenceMetadata, data: Dict[str, Any]
     ) -> ConfusionMatrix:
-        return ConfusionMatrix(
-            metadata, pd.read_json(data["matrix"]).to_numpy()
-        )
+        return ConfusionMatrix(metadata, pd.read_json(data["matrix"]).to_numpy())
 
     def __eq__(self, other: object) -> bool:
         if not isinstance(other, ConfusionMatrix):
